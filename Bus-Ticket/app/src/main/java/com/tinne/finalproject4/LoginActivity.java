@@ -50,12 +50,12 @@ public class LoginActivity extends AppCompatActivity {
                 .addOnCompleteListener(
                         task -> {
                             if (task.isSuccessful()) {
-                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                Intent intent = new Intent(LoginActivity.this, HomeInputActivity.class);
                                 startActivity(intent);
                                 finish();
                             } else {
                                 Log.w("emailPassword",task.getException());
-                                Toast.makeText(this, "Login failed!!!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(this, "Login Gagal", Toast.LENGTH_SHORT).show();
                             }
                         }
                 );

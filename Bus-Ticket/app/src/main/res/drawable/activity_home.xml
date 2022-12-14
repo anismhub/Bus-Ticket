@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3EFE0"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/loBookNowsmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/booknowsmall"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="22dp" />
+
+    <ImageView
+        android:id="@+id/imghome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bus"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/loBookNowsmall"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:textColor="#99434242"
+        android:layout_below="@id/imghome"
+        android:layout_marginLeft="78dp"
+
+        />
+    <LinearLayout
+        android:id="@+id/llfrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFrom"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+        <ImageView
+            android:id="@+id/imgFrom"
+            android:layout_marginLeft="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logofrom"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/EdFrom"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tvFrom"
+            android:background="@drawable/ed_border"
+            android:layout_marginLeft="19sp"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/linehome"
+        android:layout_below="@id/llfrom"
+        android:layout_marginLeft="41dp"/>
+
+    <TextView
+        android:id="@+id/tvto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLine"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="-20dp"
+        android:text="To"
+
+        android:textColor="#99434242" />
+
+    <LinearLayout
+        android:id="@+id/llTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvto"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+        <ImageView
+            android:id="@+id/imgTo"
+            android:layout_marginLeft="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logoto"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/EdTo"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tvFrom"
+            android:background="@drawable/ed_border"
+            android:layout_marginLeft="19sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPassDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llTo"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvPassanger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passanger"
+                android:textColor="#99434242"
+                android:layout_below="@id/imghome"
+                android:layout_marginLeft="78dp"/>
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="#99434242"
+                android:layout_below="@id/imghome"
+                android:layout_marginLeft="110dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="4dp">
+            <ImageView
+                android:id="@+id/imgPassenger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/logopassanger"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/EdPassenger"
+                android:layout_width="122dp"
+                android:layout_height="45dp"
+                android:inputType="number"
+                android:layout_below="@id/tvFrom"
+                android:background="@drawable/ed_border"
+                android:layout_marginLeft="15dp"
+                />
+            <ImageView
+                android:id="@+id/imgDate"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/logodate"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/EdDate"
+                android:layout_width="122dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/tvFrom"
+                android:background="@drawable/ed_border"
+                android:layout_marginLeft="15sp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnFindNow"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_shape"
+        android:backgroundTint="@color/warna21"
+        android:text="Find Now"
+        android:textAllCaps="false"
+        android:textColor="@color/warna6"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

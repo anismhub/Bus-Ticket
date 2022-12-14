@@ -28,7 +28,28 @@
         android:testOnly="true"
         android:theme="@style/Theme.FinalProject4" >
         <activity
-            android:name="com.tinne.finalproject4.homeInput"
+            android:name="com.tinne.finalproject4.ResultHomeActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.tinne.finalproject4.DetailResultActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.tinne.finalproject4.ChooseSeatActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.tinne.finalproject4.HomeInputActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"

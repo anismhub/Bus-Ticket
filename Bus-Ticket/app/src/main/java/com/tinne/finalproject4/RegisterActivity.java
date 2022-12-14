@@ -126,7 +126,7 @@ public class RegisterActivity extends AppCompatActivity {
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
                         Log.d("email password", "CreateUserWithEmail: Success");
-                        startActivity(new Intent(this, MainActivity.class));
+                        startActivity(new Intent(this, LoginActivity.class));
                     } else {
                         Log.w("emailpassword", task.getException());
                         Toast.makeText(this, "Pendaftaran Gagal", Toast.LENGTH_SHORT).show();

@@ -4,20 +4,109 @@ package com.tinne.finalproject4.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.tinne.finalproject4.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ActivityHomeInputBinding implements ViewBinding {
   @NonNull
   private final RelativeLayout rootView;
 
-  private ActivityHomeInputBinding(@NonNull RelativeLayout rootView) {
+  @NonNull
+  public final TextView EdDate;
+
+  @NonNull
+  public final EditText EdFrom;
+
+  @NonNull
+  public final EditText EdPassenger;
+
+  @NonNull
+  public final EditText EdTo;
+
+  @NonNull
+  public final Button btnFindNow;
+
+  @NonNull
+  public final ImageView imgDate;
+
+  @NonNull
+  public final ImageView imgFrom;
+
+  @NonNull
+  public final ImageView imgLine;
+
+  @NonNull
+  public final ImageView imgPassenger;
+
+  @NonNull
+  public final ImageView imgTo;
+
+  @NonNull
+  public final ImageView imghome;
+
+  @NonNull
+  public final LinearLayout llPassDate;
+
+  @NonNull
+  public final LinearLayout llTo;
+
+  @NonNull
+  public final LinearLayout llfrom;
+
+  @NonNull
+  public final ImageView loBookNowsmall;
+
+  @NonNull
+  public final TextView tvDate;
+
+  @NonNull
+  public final TextView tvFrom;
+
+  @NonNull
+  public final TextView tvPassanger;
+
+  @NonNull
+  public final TextView tvto;
+
+  private ActivityHomeInputBinding(@NonNull RelativeLayout rootView, @NonNull TextView EdDate,
+      @NonNull EditText EdFrom, @NonNull EditText EdPassenger, @NonNull EditText EdTo,
+      @NonNull Button btnFindNow, @NonNull ImageView imgDate, @NonNull ImageView imgFrom,
+      @NonNull ImageView imgLine, @NonNull ImageView imgPassenger, @NonNull ImageView imgTo,
+      @NonNull ImageView imghome, @NonNull LinearLayout llPassDate, @NonNull LinearLayout llTo,
+      @NonNull LinearLayout llfrom, @NonNull ImageView loBookNowsmall, @NonNull TextView tvDate,
+      @NonNull TextView tvFrom, @NonNull TextView tvPassanger, @NonNull TextView tvto) {
     this.rootView = rootView;
+    this.EdDate = EdDate;
+    this.EdFrom = EdFrom;
+    this.EdPassenger = EdPassenger;
+    this.EdTo = EdTo;
+    this.btnFindNow = btnFindNow;
+    this.imgDate = imgDate;
+    this.imgFrom = imgFrom;
+    this.imgLine = imgLine;
+    this.imgPassenger = imgPassenger;
+    this.imgTo = imgTo;
+    this.imghome = imghome;
+    this.llPassDate = llPassDate;
+    this.llTo = llTo;
+    this.llfrom = llfrom;
+    this.loBookNowsmall = loBookNowsmall;
+    this.tvDate = tvDate;
+    this.tvFrom = tvFrom;
+    this.tvPassanger = tvPassanger;
+    this.tvto = tvto;
   }
 
   @Override
@@ -43,10 +132,129 @@ public final class ActivityHomeInputBinding implements ViewBinding {
 
   @NonNull
   public static ActivityHomeInputBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.EdDate;
+      TextView EdDate = ViewBindings.findChildViewById(rootView, id);
+      if (EdDate == null) {
+        break missingId;
+      }
 
-    return new ActivityHomeInputBinding((RelativeLayout) rootView);
+      id = R.id.EdFrom;
+      EditText EdFrom = ViewBindings.findChildViewById(rootView, id);
+      if (EdFrom == null) {
+        break missingId;
+      }
+
+      id = R.id.EdPassenger;
+      EditText EdPassenger = ViewBindings.findChildViewById(rootView, id);
+      if (EdPassenger == null) {
+        break missingId;
+      }
+
+      id = R.id.EdTo;
+      EditText EdTo = ViewBindings.findChildViewById(rootView, id);
+      if (EdTo == null) {
+        break missingId;
+      }
+
+      id = R.id.btnFindNow;
+      Button btnFindNow = ViewBindings.findChildViewById(rootView, id);
+      if (btnFindNow == null) {
+        break missingId;
+      }
+
+      id = R.id.imgDate;
+      ImageView imgDate = ViewBindings.findChildViewById(rootView, id);
+      if (imgDate == null) {
+        break missingId;
+      }
+
+      id = R.id.imgFrom;
+      ImageView imgFrom = ViewBindings.findChildViewById(rootView, id);
+      if (imgFrom == null) {
+        break missingId;
+      }
+
+      id = R.id.imgLine;
+      ImageView imgLine = ViewBindings.findChildViewById(rootView, id);
+      if (imgLine == null) {
+        break missingId;
+      }
+
+      id = R.id.imgPassenger;
+      ImageView imgPassenger = ViewBindings.findChildViewById(rootView, id);
+      if (imgPassenger == null) {
+        break missingId;
+      }
+
+      id = R.id.imgTo;
+      ImageView imgTo = ViewBindings.findChildViewById(rootView, id);
+      if (imgTo == null) {
+        break missingId;
+      }
+
+      id = R.id.imghome;
+      ImageView imghome = ViewBindings.findChildViewById(rootView, id);
+      if (imghome == null) {
+        break missingId;
+      }
+
+      id = R.id.llPassDate;
+      LinearLayout llPassDate = ViewBindings.findChildViewById(rootView, id);
+      if (llPassDate == null) {
+        break missingId;
+      }
+
+      id = R.id.llTo;
+      LinearLayout llTo = ViewBindings.findChildViewById(rootView, id);
+      if (llTo == null) {
+        break missingId;
+      }
+
+      id = R.id.llfrom;
+      LinearLayout llfrom = ViewBindings.findChildViewById(rootView, id);
+      if (llfrom == null) {
+        break missingId;
+      }
+
+      id = R.id.loBookNowsmall;
+      ImageView loBookNowsmall = ViewBindings.findChildViewById(rootView, id);
+      if (loBookNowsmall == null) {
+        break missingId;
+      }
+
+      id = R.id.tvDate;
+      TextView tvDate = ViewBindings.findChildViewById(rootView, id);
+      if (tvDate == null) {
+        break missingId;
+      }
+
+      id = R.id.tvFrom;
+      TextView tvFrom = ViewBindings.findChildViewById(rootView, id);
+      if (tvFrom == null) {
+        break missingId;
+      }
+
+      id = R.id.tvPassanger;
+      TextView tvPassanger = ViewBindings.findChildViewById(rootView, id);
+      if (tvPassanger == null) {
+        break missingId;
+      }
+
+      id = R.id.tvto;
+      TextView tvto = ViewBindings.findChildViewById(rootView, id);
+      if (tvto == null) {
+        break missingId;
+      }
+
+      return new ActivityHomeInputBinding((RelativeLayout) rootView, EdDate, EdFrom, EdPassenger,
+          EdTo, btnFindNow, imgDate, imgFrom, imgLine, imgPassenger, imgTo, imghome, llPassDate,
+          llTo, llfrom, loBookNowsmall, tvDate, tvFrom, tvPassanger, tvto);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }
