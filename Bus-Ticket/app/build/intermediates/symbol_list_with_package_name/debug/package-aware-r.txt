@@ -2593,6 +2593,7 @@ drawable avd_show_password
 drawable back
 drawable bg_musang
 drawable booknow
+drawable booknow2
 drawable booknowsmall
 drawable btn_bordershape
 drawable btn_checkbox_checked_mtrl
@@ -2605,6 +2606,10 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable btn_shape
 drawable bus
+drawable bus1
+drawable bus2
+drawable bus3
+drawable bus4
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -2842,8 +2847,10 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btnBack
+id btnBook
 id btnFindNow
 id btnLogin
+id btnSeat
 id btnSignUp
 id btnSubmit
 id buttonPanel
@@ -3262,10 +3269,15 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvChosse
+id tvDarimana
 id tvDate
 id tvEmail
 id tvFrom
 id tvFromTo
+id tvHarga
+id tvJamDarimana
+id tvJamKemana
+id tvKemana
 id tvKodeBus
 id tvNamaBus
 id tvPassanger

@@ -2592,6 +2592,7 @@ int drawable avd_show_password 0x7f070075
 int drawable back 0x7f070076
 int drawable bg_musang 0x7f070077
 int drawable booknow 0x7f070078
+int drawable booknow2 0x7f070103
 int drawable booknowsmall 0x7f070079
 int drawable btn_bordershape 0x7f07007a
 int drawable btn_checkbox_checked_mtrl 0x7f07007b
@@ -2604,6 +2605,10 @@ int drawable btn_radio_on_mtrl 0x7f070081
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f070082
 int drawable btn_shape 0x7f070083
 int drawable bus 0x7f070084
+int drawable bus1 0x7f070104
+int drawable bus2 0x7f070105
+int drawable bus3 0x7f070106
+int drawable bus4 0x7f070107
 int drawable common_full_open_on_phone 0x7f070085
 int drawable common_google_signin_btn_icon_dark 0x7f070086
 int drawable common_google_signin_btn_icon_dark_focused 0x7f070087
@@ -2841,8 +2846,10 @@ int id browser_actions_menu_item_text 0x7f08006b
 int id browser_actions_menu_items 0x7f08006c
 int id browser_actions_menu_view 0x7f08006d
 int id btnBack 0x7f08006e
+int id btnBook 0x7f08023a
 int id btnFindNow 0x7f08006f
 int id btnLogin 0x7f080070
+int id btnSeat 0x7f08023b
 int id btnSignUp 0x7f080071
 int id btnSubmit 0x7f080072
 int id buttonPanel 0x7f080073
@@ -3261,10 +3268,15 @@ int id transition_scene_layoutid_cache 0x7f08020f
 int id transition_transform 0x7f080210
 int id triangle 0x7f080211
 int id tvChosse 0x7f080212
+int id tvDarimana 0x7f080235
 int id tvDate 0x7f080213
 int id tvEmail 0x7f080214
 int id tvFrom 0x7f080215
 int id tvFromTo 0x7f080216
+int id tvHarga 0x7f080236
+int id tvJamDarimana 0x7f080237
+int id tvJamKemana 0x7f080238
+int id tvKemana 0x7f080239
 int id tvKodeBus 0x7f080217
 int id tvNamaBus 0x7f080218
 int id tvPassanger 0x7f080219

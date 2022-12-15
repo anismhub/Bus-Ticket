@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.223"
-        app:srcCompat="@drawable/booknow" />
+        app:srcCompat="@drawable/booknow2" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"

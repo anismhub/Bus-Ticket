@@ -1,7 +1,7 @@
 package com.tinne.finalproject4;
 
-import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.DatePicker;
 
@@ -13,16 +13,16 @@ import com.tinne.finalproject4.databinding.ActivityHomeInputBinding;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
-import java.util.TimeZone;
 
 public class HomeInputActivity extends AppCompatActivity {
-    MaterialDatePicker materialDatePicker;
+    final String EXTRA_DARIMANA = "extra_darimana";
+    final String EXTRA_KEMANA = "extra_kemana";
+    final String EXTRA_DATE = "extra_date";
     Calendar newCalendar;
     String date = "";
     String from;
     String to;
     String passenger;
-    String tCalendar;
     SimpleDateFormat dateFormatter;
     private ActivityHomeInputBinding binding;
     private DatePickerDialog datePickerDialog;
@@ -35,19 +35,19 @@ public class HomeInputActivity extends AppCompatActivity {
 
         dateFormatter = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
 
-        from = binding.EdFrom.getText().toString().trim();
-        to = binding.EdTo.getText().toString().trim();
-        passenger = binding.EdPassenger.toString().trim();
-        tCalendar = binding.EdDate.toString().trim();
 
-//        selectDate();
-
-        binding.EdDate.setOnClickListener(v -> {
-            showDateDialog();
-        });
+        binding.EdDate.setOnClickListener(v -> showDateDialog());
 
         binding.btnFindNow.setOnClickListener(v -> {
-
+            from = binding.EdFrom.getText().toString().trim();
+            to = binding.EdTo.getText().toString().trim();
+            date = binding.EdDate.getText().toString().trim();
+            passenger = binding.EdPassenger.toString().trim();
+            Intent intent = new Intent(this, ResultHomeActivity.class);
+            intent.putExtra(EXTRA_KEMANA, to);
+            intent.putExtra(EXTRA_DARIMANA, from);
+            intent.putExtra(EXTRA_DATE, date);
+            startActivity(intent);
         });
 
 
@@ -61,41 +61,40 @@ public class HomeInputActivity extends AppCompatActivity {
 
     private void showDateDialog() {
 
-        /**
-         * Calendar untuk mendapatkan tanggal sekarang
+        /*
+          Calendar untuk mendapatkan tanggal sekarang
          */
         Calendar newCalendars = Calendar.getInstance();
 
-        /**
-         * Initiate DatePicker dialog
+        /*
+          Initiate DatePicker dialog
          */
         datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
 
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
 
-                /**
-                 * Method ini dipanggil saat kita selesai memilih tanggal di DatePicker
+                /*
+                  Method ini dipanggil saat kita selesai memilih tanggal di DatePicker
                  */
 
-                /**
-                 * Set Calendar untuk menampung tanggal yang dipilih
+                /*
+                  Set Calendar untuk menampung tanggal yang dipilih
                  */
                 Calendar newDate = Calendar.getInstance();
                 newDate.set(year, monthOfYear, dayOfMonth);
 
-                /**
-                 * Update TextView dengan tanggal yang kita pilih
+                /*
+                  Update TextView dengan tanggal yang kita pilih
                  */
                 binding.EdDate.setText(dateFormatter.format(newDate.getTime()));
-//                tCalendar = "Tanggal dipilih : " + dateFormatter.format(newDate.getTime());
 
             }
 
         }, newCalendars.get(Calendar.YEAR), newCalendars.get(Calendar.MONTH), newCalendars.get(Calendar.DAY_OF_MONTH));
 
-        /**
-         * Tampilkan DatePicker dialog
+        /*
+          Tampilkan DatePicker dialog
          */
         datePickerDialog.show();
     }

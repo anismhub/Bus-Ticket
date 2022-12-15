@@ -24,6 +24,10 @@
         "source": "C:\\Users\\helpdesk02\\.gradle\\daemon\\7.4\\com.tinne.finalproject4.app-main-37:\\layout\\activity_splash.xml"
     },
     {
+        "merged": "com.tinne.finalproject4.app-mergeDebugResources-34:/layout/activity_detail_result.xml",
+        "source": "com.tinne.finalproject4.app-main-37:/layout/activity_detail_result.xml"
+    },
+    {
         "merged": "C:\\Users\\helpdesk02\\.gradle\\daemon\\7.4\\com.tinne.finalproject4.app-mergeDebugResources-34:\\layout\\activity_detail_result.xml",
         "source": "C:\\Users\\helpdesk02\\.gradle\\daemon\\7.4\\com.tinne.finalproject4.app-main-37:\\layout\\activity_detail_result.xml"
     },
@@ -34,9 +38,5 @@
     {
         "merged": "C:\\Users\\helpdesk02\\.gradle\\daemon\\7.4\\com.tinne.finalproject4.app-mergeDebugResources-34:\\layout\\activity_home_input.xml",
         "source": "C:\\Users\\helpdesk02\\.gradle\\daemon\\7.4\\com.tinne.finalproject4.app-main-37:\\layout\\activity_home_input.xml"
-    },
-    {
-        "merged": "com.tinne.finalproject4.app-mergeDebugResources-34:/layout/activity_home_input.xml",
-        "source": "com.tinne.finalproject4.app-main-37:/layout/activity_home_input.xml"
     }
 ]

@@ -70,6 +70,7 @@
                 android:paddingRight="30dp">
 
                 <TextView
+                    android:id="@+id/tvDarimana"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Medan"
@@ -77,6 +78,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tvJamDarimana"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="08:00"
@@ -101,7 +103,7 @@
                     android:layout_gravity="center_vertical"
                     android:gravity="right"
                     android:orientation="horizontal"
-                    android:paddingLeft="130dp">
+                    android:paddingLeft="70dp">
 
                     <ImageView
                         android:id="@+id/imageView3"
@@ -161,6 +163,7 @@
                 android:paddingRight="30dp">
 
                 <TextView
+                    android:id="@+id/tvKemana"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Lampung"
@@ -168,6 +171,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tvJamKemana"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="12:00"
@@ -197,11 +201,12 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tvHarga"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="10dp"
-                android:text="120.000"
+                android:text="120000"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -211,6 +216,7 @@
                 android:layout_weight="1" />
 
             <Button
+                android:id="@+id/btnBook"
                 android:layout_width="100dp"
                 android:layout_height="30dp"
                 android:background="@drawable/btn_shape"
@@ -219,7 +225,8 @@
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="12sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginTop="7dp"/>
 
 
         </LinearLayout>
