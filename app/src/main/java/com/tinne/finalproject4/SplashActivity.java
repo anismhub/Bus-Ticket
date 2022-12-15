@@ -32,8 +32,6 @@ public class SplashActivity extends AppCompatActivity {
 
     private void checkUser() {
         FirebaseUser currentUser = mAuth.getCurrentUser();
-//        SharedPreferences mPrefs = getSharedPreferences("lastIntent",0);
-//        String lastIntent = mPrefs.getString("intent","");
         final Handler handler = new Handler(Looper.getMainLooper());
         handler.postDelayed(() -> {
             if (currentUser == null) {
